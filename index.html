@@ -1,80 +1,360 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <link rel="icon" href="NexionLogo.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Mozilla+Headline:wght@200..700&display=swap" rel="stylesheet">
-    <title>NEXION</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <title>Diário de Robótica</title>
+  <link rel="icon" href="LogoDrobotica.png" type="image/png">
 </head>
-
 <body>
-    <header><div class="logo-container">
-            <img src="NexionLogo.png" alt="Logo" class="logo">
-<h1 class="site"> NEXION </h1>
 
-    </header>
-        
-    <header>
-      Energia Renovável - Solar     <img src="nexion.png.jpeg" alt="imagem" class="Imagem"> 
-           
-    </header>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="logo-container">
+      <img src="LogoDrobotica.png" alt="Logo Diário de Robótica" class="logo">
+      <h1 class="nome-site">Diário de Robótica</h1>
+    </div>
+    <nav>
+      <a href="#experimentos">Experimentos</a>
+      <a href="#laboratorio">Laboratório</a>
+      <a href="#ia-robotica">IA & Robótica</a>
+      <a href="#ml-diagrama">Machine Learning</a>
+      <a href="#ia-setores">IA nos Setores</a>
+    </nav>
+  </header>
 
-    <section class="chamada">
-        <div class="chamada-texto">
-            <h1>  COMO A TECNOLOGIA ESTÁ AJUDANDO O MEIO AMBIENTE ?</h1>
-            <p>    A crescente necessidade de manter nossos dispositivos conectados expõe um grande desafio: a nossa dependência da rede elétrica convencional, muitas vezes alimentada por fontes que impactam o meio ambiente. Esse problema se torna ainda mais real quando a bateria do celular acaba no meio da rua, causando insegurança e interrompendo a nossa rotina.
-Está na hora de resolver esses problemas, usando fontes de energia limpa e gratuita, com a força do sol para manter a todos nós conectados.
-Essa não é mais uma ideia futurista. É a base da nossa solução: uma rede de carregadores solares públicos e inteligentes. Com carregamento prático por indução magnética (sem fio) e acesso via um aplicativo com sistema de recompensas, nosso projeto une tecnologia e sustentabilidade para oferecer uma nova forma de manter todos sempre conectados de maneira ecológica. </p>
-        </div>
+  <!-- ===== HERO / CHAMADA ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="destaque-badge">✦ DESTAQUE</span>
+      <h1>Projetos Principais</h1>
+      <p class="hero-tags"><b>#energias &nbsp; #meioambiente &nbsp; #sustentabilidade</b></p>
+      <p class="hero-desc">Explorando a robótica, a inteligência artificial e a sustentabilidade por meio de projetos práticos e inovadores.</p>
+    </div>
+    <div class="hero-decoration">
+      <div class="circle c1"></div>
+      <div class="circle c2"></div>
+      <div class="circle c3"></div>
+    </div>
+  </section>
 
-        <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/1Lqya70d7hw?si=040GubMvaSzGjeH6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </section>
+  <!-- ===== NAVEGAÇÃO ÂNCORA VISUAL ===== -->
+  <div class="pill-nav">
+    <a href="#experimentos" class="pill">🔬 Experimentos</a>
+    <a href="#laboratorio" class="pill">🧪 Laboratório</a>
+    <a href="#ia-robotica" class="pill">🤖 IA & Robótica</a>
+    <a href="#ml-diagrama" class="pill">🧠 Machine Learning</a>
+    <a href="#ia-setores" class="pill">🌐 IA nos Setores</a>
+  </div>
 
-    <section class="categoria">
-        <h2> PROBLEMAS </h2>
-        <p>1)  A crescente demanda por energia para manter nossos dispositivos eletrônicos conectados revela um desafio central: nossa grande dependência da rede elétrica convencional, que muitas vezes utiliza fontes que impactam o meio ambiente. Esse problema se torna pessoal e urgente quando a bateria de celulares e outros aparelhos acaba fora de casa, gerando insegurança, limitando a comunicação e forçando a busca por tomadas, o que reforça um ciclo de consumo energético menos sustentável.
-            2)A principal limitação da energia solar para alimentar serviços públicos é sua natureza inconstante: ela só é gerada sob a luz do sol. Isso representa um desafio direto para a nossa proposta de um serviço sempre disponível. Essa dependência exclusiva da luz solar direta compromete a promessa de um serviço público confiável e acessível a qualquer hora do dia ou da noite.
+  <!-- ===== SEÇÃO: RELATO DOS EXPERIMENTOS ===== -->
+  <section class="secao" id="experimentos">
+    <div class="secao-header laranja">
+      <span class="secao-icone">🔬</span>
+      <h2>Relato dos Experimentos</h2>
+      <span class="secao-sub">Movimentação e Acessibilidade</span>
+    </div>
+
+    <div class="cards-grid">
+
+      <div class="card card-laranja">
+        <div class="card-tag">Projeto 1</div>
+        <h3>Semáforo com IR e LEDs</h3>
+        <p>
+          Desenvolvemos um sistema de semáforo utilizando sensores infravermelhos (IR) e LEDs coloridos.
+          O sensor IR detecta a presença de objetos ou pessoas e aciona automaticamente as luzes,
+          simulando um semáforo inteligente para uso em contextos de acessibilidade.
         </p>
-        <h2> SOLUÇÕES TECNOLÓGICAS</h2>
-        <p> A solução para esses problemas é criar uma rede de carregadores inteligentes fixos em pontos de grande circulação, como postes e pilares que ficam nas praças, calçadões e terminais de ônibus. Esses carregadores serão alimentados pela energia solar, para garantir a autonomia energética, cada totem contará com baterias de alta capacidade e um sistema de armazenamento inteligente: durante o dia, os painéis carregarão as baterias, e um controlador gerenciará a reserva para assegurar o funcionamento contínuo à noite e em dias de mau tempo, eliminando a dependência de outras fontes de energia.
-
-Para garantir a máxima utilização, o carregamento será por indução magnética, permitindo que os cidadãos recarreguem seus dispositivos, sem a necessidade de cabos, conseguindo carregar todos os tipos de celulares. O acesso aos carregadores será por meio do nosso App (NEXION) que deverá ser instalado no aparelho celular. Para maior segurança, a cada uso, o aplicativo enviará uma senha única para que você consiga ativar e utilizar o carregador. Assim, adquirindo pontos pelo aplicativo, a cada carga completa acumulada, você adquire 50 pontos, e ao conseguir 10.000 pontos, você ganha seu próprio carregador solar portátil.
-     <h2> Profissionais necessários</h2>       
-- Designer de Produto 
-    <br>
-     - Engenheiro Eletricista
-    <br>
-      - Designer de UX/UI - Desenvolvedor de Software 
-    <br>
-     - Profissional de Marketing 
-     <br> 
-     - Técnico de Instalação e Manutenção
-     <br> 
-      - Consultor Jurídico
-
-      <div class="categoria-videos">
-<a href="https://www.youtube.com/watch?v=l7jsN87m3FY">
-                <img src="https://img.youtube.com/vi/l7jsN87m3FY/maxresdefault.jpg" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=H3ZmYXZQ4T0">
-                <img src="https://img.youtube.com/vi/H3ZmYXZQ4T0/maxresdefault.jpg" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=0rz5uEh76kk">
-                <img src="https://img.youtube.com/vi/0rz5uEh76kk/maxresdefault.jpg" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=K8PgOYJoUjA">
-                <img src="https://img.youtube.com/vi/K8PgOYJoUjA/maxresdefault.jpg" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=Tcy_QYXPhsY">
-                <img src="https://img.youtube.com/vi/Tcy_QYXPhsY/maxresdefault.jpg" />
-            </a>
+        <div class="card-detalhe">
+          <span>🟢 Sensor IR</span>
+          <span>🔴 LEDs RGB</span>
+          <span>⚙️ Arduino</span>
         </div>
-    </section>
+      </div>
+
+      <div class="card card-azul">
+        <div class="card-tag">Projeto 2</div>
+        <h3>Servomotores</h3>
+        <p>
+          Neste experimento, programamos servomotores para realizar movimentos precisos e controlados.
+          A experiência serviu como base para entendermos como sistemas de movimentação robótica
+          podem auxiliar em soluções de acessibilidade, como braços mecânicos e dispositivos de apoio.
+        </p>
+        <div class="card-detalhe">
+          <span>🔧 Servomotor SG90</span>
+          <span>📡 PWM</span>
+          <span>⚙️ Arduino</span>
+        </div>
+      </div>
+
+      <div class="card card-verde">
+        <div class="card-tag">Projeto 3</div>
+        <h3>Acessibilidade: Cadeira de Rodas com Venda</h3>
+        <p>
+          Simulamos situações de deficiência motora e visual: um aluno utilizou a cadeira de rodas
+          enquanto outro foi vendado. A atividade gerou reflexões profundas sobre os desafios de
+          locomoção e percepção espacial enfrentados por pessoas com deficiência no dia a dia.
+        </p>
+        <div class="card-detalhe">
+          <span>♿ Acessibilidade</span>
+          <span>👁️ Percepção</span>
+          <span>🤝 Empatia</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== SEÇÃO: LABORATÓRIO ===== -->
+  <section class="secao secao-alt" id="laboratorio">
+    <div class="secao-header azul">
+      <span class="secao-icone">🧪</span>
+      <h2>Laboratório</h2>
+      <span class="secao-sub">Sensor para Cadeira de Rodas</span>
+    </div>
+
+    <div class="lab-content">
+      <div class="lab-texto">
+        <h3>Sensor de Obstáculos para Cadeira de Rodas</h3>
+        <p>
+          No laboratório, desenvolvemos um protótipo de sensor ultrassônico adaptado para cadeiras de rodas.
+          O dispositivo detecta obstáculos à frente e emite alertas sonoros e visuais, aumentando
+          a autonomia e segurança de usuários com mobilidade reduzida.
+        </p>
+        <p>
+          Utilizamos o sensor HC-SR04 integrado a uma placa Arduino, programada para medir distâncias
+          em tempo real. Quando um obstáculo é detectado a menos de 30 cm, um buzzer e LEDs vermelhos
+          são acionados automaticamente.
+        </p>
+        <div class="card-detalhe" style="margin-top: 20px;">
+          <span>📡 HC-SR04</span>
+          <span>🔊 Buzzer</span>
+          <span>🚨 LED Alerta</span>
+          <span>⚙️ Arduino Uno</span>
+        </div>
+      </div>
+      <div class="lab-fotos">
+        <div class="foto-placeholder">
+          <img src="sustenfoto1.jpeg" alt="Foto do laboratório 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="foto-fallback" style="display:none">📸 Foto do Laboratório</div>
+        </div>
+        <div class="foto-placeholder">
+          <img src="sustenfoto3.png" alt="Foto do laboratório 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="foto-fallback" style="display:none">📸 Sensor de Proximidade</div>
+        </div>
+        <div class="foto-placeholder">
+          <img src="sustenfoto4.png" alt="Foto do laboratório 3" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="foto-fallback" style="display:none">📸 Montagem do Circuito</div>
+        </div>
+        <div class="foto-placeholder">
+          <img src="sustenfoto5.png" alt="Foto do laboratório 4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="foto-fallback" style="display:none">📸 Teste Final</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEÇÃO: IA & ROBÓTICA ===== -->
+  <section class="secao" id="ia-robotica">
+    <div class="secao-header roxo">
+      <span class="secao-icone">🤖</span>
+      <h2>Projeto de Robótica com IA</h2>
+      <span class="secao-sub">Pontos Positivos e Negativos</span>
+    </div>
+
+    <div class="ia-grid">
+      <div class="ia-card positivo">
+        <div class="ia-card-header">
+          <span class="ia-icone">✅</span>
+          <h3>Pontos Positivos</h3>
+        </div>
+        <ul>
+          <li>
+            <strong>Agilidade no desenvolvimento:</strong> A IA acelera etapas como geração de código,
+            simulação de circuitos e criação de diagramas, poupando horas de trabalho manual.
+          </li>
+          <li>
+            <strong>Sugestões criativas:</strong> Ferramentas de IA propõem soluções inovadoras para
+            problemas de engenharia que talvez não fossem consideradas de forma convencional.
+          </li>
+          <li>
+            <strong>Acessibilidade ao conhecimento:</strong> Qualquer aluno pode consultar conceitos
+            complexos de eletrônica e programação em linguagem simplificada e interativa.
+          </li>
+          <li>
+            <strong>Depuração de código:</strong> A IA identifica erros no código Arduino e sugere
+            correções, reduzindo o tempo gasto na solução de problemas.
+          </li>
+          <li>
+            <strong>Personalização do aprendizado:</strong> O aluno pode aprender no seu próprio
+            ritmo, fazendo perguntas específicas sobre cada etapa do projeto.
+          </li>
+        </ul>
+      </div>
+
+      <div class="ia-card negativo">
+        <div class="ia-card-header">
+          <span class="ia-icone">❌</span>
+          <h3>Pontos Negativos</h3>
+        </div>
+        <ul>
+          <li>
+            <strong>Dependência excessiva:</strong> O uso intenso da IA pode reduzir o esforço próprio
+            do aluno, impedindo o desenvolvimento do raciocínio lógico e da resolução autônoma de problemas.
+          </li>
+          <li>
+            <strong>Informações imprecisas:</strong> A IA pode gerar respostas incorretas sobre
+            especificações técnicas de componentes eletrônicos, levando a erros de montagem.
+          </li>
+          <li>
+            <strong>Falta de experiência prática:</strong> Delegar demais à IA pode fazer o aluno
+            perder a oportunidade de aprender com o erro real, essencial na robótica.
+          </li>
+          <li>
+            <strong>Questões de autoria:</strong> Projetos gerados predominantemente por IA levantam
+            dúvidas sobre o real aprendizado e autoria do trabalho entregue.
+          </li>
+          <li>
+            <strong>Consumo energético:</strong> Modelos de IA de grande porte consomem quantidades
+            significativas de energia elétrica, contradizendo projetos de sustentabilidade.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEÇÃO: DIAGRAMA DE MACHINE LEARNING ===== -->
+  <section class="secao secao-alt" id="ml-diagrama">
+    <div class="secao-header verde">
+      <span class="secao-icone">🧠</span>
+      <h2>Tipos de Aprendizado de Máquina</h2>
+      <span class="secao-sub">Diagrama de Machine Learning</span>
+    </div>
+
+    <div class="diagrama-container">
+      <p class="diagrama-instrucao">Insira abaixo o diagrama de tipos de aprendizado de máquina:</p>
+      <div class="diagrama-area">
+        <img src="diagrama-ml.png" alt="Diagrama de tipos de aprendizado de máquina"
+             class="diagrama-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <div class="diagrama-fallback" style="display:none">
+          <span class="diagrama-icone-grande">🧠</span>
+          <p><strong>Diagrama de Machine Learning</strong></p>
+          <p style="color:#888; font-size:14px;">Substitua o arquivo <code>diagrama-ml.png</code> pelo seu diagrama</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEÇÃO: IA NOS SETORES ===== -->
+  <section class="secao" id="ia-setores">
+    <div class="secao-header laranja">
+      <span class="secao-icone">🌐</span>
+      <h2>IA nos Setores</h2>
+      <span class="secao-sub">Benefícios e Malefícios</span>
+    </div>
+
+    <div class="setores-grid">
+
+      <!-- Agricultura -->
+      <div class="setor-card">
+        <div class="setor-topo setor-agri">
+          <span class="setor-emoji">🌱</span>
+          <h3>Agricultura</h3>
+        </div>
+        <div class="setor-body">
+          <div class="beneficio">
+            <h4>✅ Benefícios</h4>
+            <ul>
+              <li>Monitoramento de lavouras por drones com visão computacional</li>
+              <li>Previsão de safras com maior precisão usando dados climáticos</li>
+              <li>Redução do uso de agrotóxicos com pulverização inteligente</li>
+              <li>Irrigação automatizada baseada em sensores de solo</li>
+            </ul>
+          </div>
+          <div class="maleficio">
+            <h4>❌ Malefícios</h4>
+            <ul>
+              <li>Substituição de empregos rurais por máquinas autônomas</li>
+              <li>Alto custo de implementação para pequenos agricultores</li>
+              <li>Dependência de conectividade em áreas remotas</li>
+              <li>Riscos de falhas em sistemas críticos de produção</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Segurança e Defesa -->
+      <div class="setor-card">
+        <div class="setor-topo setor-seg">
+          <span class="setor-emoji">🛡️</span>
+          <h3>Segurança e Defesa</h3>
+        </div>
+        <div class="setor-body">
+          <div class="beneficio">
+            <h4>✅ Benefícios</h4>
+            <ul>
+              <li>Detecção de ameaças em tempo real via câmeras inteligentes</li>
+              <li>Análise preditiva para prevenção de crimes</li>
+              <li>Identificação facial para controle de acesso seguro</li>
+              <li>Robôs para missões em ambientes perigosos</li>
+            </ul>
+          </div>
+          <div class="maleficio">
+            <h4>❌ Malefícios</h4>
+            <ul>
+              <li>Riscos à privacidade com vigilância em massa</li>
+              <li>Uso de sistemas autônomos letais em conflitos</li>
+              <li>Viés algorítmico em sistemas de reconhecimento facial</li>
+              <li>Vulnerabilidade a ataques cibernéticos e manipulação</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Serviços Públicos e Cidadania -->
+      <div class="setor-card">
+        <div class="setor-topo setor-pub">
+          <span class="setor-emoji">🏛️</span>
+          <h3>Serviços Públicos e Cidadania</h3>
+        </div>
+        <div class="setor-body">
+          <div class="beneficio">
+            <h4>✅ Benefícios</h4>
+            <ul>
+              <li>Chatbots para atendimento 24h em serviços governamentais</li>
+              <li>Detecção de fraudes em benefícios sociais</li>
+              <li>Gestão inteligente de tráfego urbano</li>
+              <li>Plataformas digitais que aproximam cidadãos e gestores</li>
+            </ul>
+          </div>
+          <div class="maleficio">
+            <h4>❌ Malefícios</h4>
+            <ul>
+              <li>Exclusão digital de populações sem acesso à internet</li>
+              <li>Risco de uso político dos dados coletados</li>
+              <li>Opacidade nos algoritmos de decisão pública</li>
+              <li>Redução de postos de trabalho no setor público</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer>
+    <div class="footer-content">
+      <img src="LogoDrobotica.png" alt="Logo" class="footer-logo" onerror="this.style.display='none'">
+      <p><strong>Diário de Robótica</strong> — Projeto Escolar</p>
+      <p style="color:#aaa; font-size:13px;">#energias &nbsp; #meioambiente &nbsp; #sustentabilidade</p>
+    </div>
+  </footer>
 
 </body>
-
 </html>
